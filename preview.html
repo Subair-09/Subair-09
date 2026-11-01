@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurudeen Adewale | GitHub Profile README Preview</title>
+  <style>
+    :root {
+      --bg: #F0F4F8;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --accent-orange: #FF7A00;
+      --accent-blue: #2563EB;
+      --border-color: #E2E8F0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #F0F4F8 0%, #E2E8F0 100%);
+      color: var(--text-main);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .top-toolbar {
+      width: 100%;
+      max-width: 960px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 12px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 14px;
+    }
+
+    .badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #16A34A;
+      font-weight: 600;
+      background: #DCFCE7;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .badge-live::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #22C55E;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    .readme-wrapper {
+      width: 100%;
+      max-width: 960px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    .hero-container {
+      width: 100%;
+      margin-bottom: 28px;
+    }
+
+    .hero-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 28px 8px 16px 8px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .section-link {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--accent-blue);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .section-link:hover {
+      color: #1D4ED8;
+      transform: translateX(2px);
+    }
+
+    .tech-stack-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+      padding: 0 8px;
+    }
+
+    .tech-stack-grid a {
+      display: inline-block;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .tech-stack-grid a:hover {
+      transform: translateY(-2px);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+      padding: 0 8px;
+    }
+
+    .project-card-link {
+      text-decoration: none;
+      display: block;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s;
+      border-radius: 16px;
+    }
+
+    .project-card-link:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-card-link img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .connect-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 28px;
+      padding: 0 8px;
+    }
+
+    .connect-grid a {
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+
+    .connect-grid a:hover {
+      transform: translateY(-2px);
+    }
+
+    .footer-container {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .footer-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 820px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-toolbar">
+    <div>
+      <strong>GitHub Profile Preview:</strong> <code>Subair-09 / README.md</code>
+    </div>
+    <div class="badge-live">Ready to Deploy</div>
+  </div>
+
+  <div class="readme-wrapper">
+
+    <!-- HERO SECTION -->
+    <div class="hero-container">
+      <img src="assets/hero-banner.svg" alt="Nurudeen Adewale Hero Banner">
+    </div>
+
+    <!-- TECH STACK SECTION -->
+    <div class="section-header">
+      <div class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="8" height="8" rx="2"></rect>
+          <rect x="14" y="2" width="8" height="8" rx="2"></rect>
+          <rect x="14" y="14" width="8" height="8" rx="2"></rect>
+          <rect x="2" y="14" width="8" height="8" rx="2"></rect>
+          <path d="M6 10v4"></path>
+          <path d="M10 6h4"></path>
+          <path d="M18 10v4"></path>
+          <path d="M10 18h4"></path>
+        </svg>
+        <span>Tech Stack</span>
+      </div>
+      <a href="https://github.com/Subair-09?tab=repositories" class="section-link" target="_blank">
+        View all skills ➔
+      </a>
+    </div>
+
+    <div class="tech-stack-grid">
+      <a href="https://azure.microsoft.com/" target="_blank"><img src="assets/tech/azure.svg" alt="Azure"></a>
+      <a href="https://aws.amazon.com/" target="_blank"><img src="assets/tech/aws.svg" alt="AWS"></a>
+      <a href="https://www.linux.org/" target="_blank"><img src="assets/tech/linux.svg" alt="Linux"></a>
+      <a href="https://www.docker.com/" target="_blank"><img src="assets/tech/docker.svg" alt="Docker"></a>
+      <a href="https://kubernetes.io/" target="_blank"><img src="assets/tech/kubernetes.svg" alt="Kubernetes"></a>
+      <a href="https://github.com/features/actions" target="_blank"><img src="assets/tech/github-actions.svg" alt="GitHub Actions"></a>
+      <a href="https://react.dev/" target="_blank"><img src="assets/tech/react.svg" alt="React"></a>
+      <a href="https://nodejs.org/" target="_blank"><img src="assets/tech/nodejs.svg" alt="Node.js"></a>
+    </div>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <div class="section-header">
+      <div class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#2563EB">
+          <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-1.5V9a3 3 0 00-3-3h-3.379a3 3 0 01-2.121-.879L8.379 3.879A3 3 0 006.257 3H4.5A3 3 0 001.5 6v12a3 3 0 003 3h15z"/>
+        </svg>
+        <span>Featured Projects</span>
+      </div>
+      <a href="https://github.com/Subair-09?tab=repositories" class="section-link" target="_blank">
+        View all projects ➔
+      </a>
+    </div>
+
+    <div class="projects-grid">
+      <a href="https://github.com/Subair-09/textocode" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-textocode.svg" alt="Textocode Marketplace">
+      </a>
+      <a href="https://github.com/Subair-09/japamoves" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-japamoves.svg" alt="JapaMoves AI">
+      </a>
+      <a href="https://github.com/Subair-09/bbdmobility" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-bbdmobility.svg" alt="BBD Mobility">
+      </a>
+      <a href="https://github.com/Subair-09/baked-by-Doja-" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-baked-by-doja.svg" alt="Baked by Doja">
+      </a>
+    </div>
+
+    <!-- MORE PROJECTS SECTION -->
+    <div class="section-header">
+      <div class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF7A00">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+        </svg>
+        <span>More Projects</span>
+      </div>
+      <a href="https://github.com/Subair-09?tab=repositories" class="section-link" target="_blank">
+        Explore more ➔
+      </a>
+    </div>
+
+    <div class="projects-grid">
+      <a href="https://github.com/Subair-09/Medicare-" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-medicare.svg" alt="Medicare">
+      </a>
+      <a href="https://github.com/Subair-09/TechquoMobileApp" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-techquo.svg" alt="Techquo Mobile">
+      </a>
+      <a href="https://github.com/Subair-09/bbdautos" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-bbdautos.svg" alt="BBD Autos">
+      </a>
+      <a href="https://github.com/Subair-09/casemind" class="project-card-link" target="_blank">
+        <img src="assets/cards/card-casemind.svg" alt="CaseMind">
+      </a>
+    </div>
+
+    <!-- LET'S CONNECT SECTION -->
+    <div class="section-header">
+      <div class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#2563EB">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+        <span>Let's Connect</span>
+      </div>
+      <span style="font-size: 13.5px; color: #64748B; font-weight: 500;">
+        Collaborate &nbsp;•&nbsp; Build &nbsp;•&nbsp; Create Impact
+      </span>
+    </div>
+
+    <div class="connect-grid">
+      <a href="mailto:Nurudeen@quotientsafrica.com">
+        <img src="assets/connect/email.svg" alt="Email">
+      </a>
+      <a href="https://quotientsdigitalhorizonltd.com" target="_blank">
+        <img src="assets/connect/website.svg" alt="Website">
+      </a>
+      <a href="https://github.com/Subair-09" target="_blank">
+        <img src="assets/connect/github.svg" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/subair-09" target="_blank">
+        <img src="assets/connect/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-container">
+      <img src="assets/footer.svg" alt="Footer">
+    </div>
+
+  </div>
+
+</body>
+</html>

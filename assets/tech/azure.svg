@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="40" viewBox="0 0 96 40" fill="none">
+    <rect x="0.5" y="0.5" width="95" height="39" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <g transform="translate(12, 8)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill="#0078D4" d="M12.923 1.77L6.47 14.15H1.05l7.98-12.38zM7.34 15.35l3.22 4.88h8.39l-8.08-9.4zM20 18.77l-4.22-4.91L23.5 1.77h-6.26l-5.06 9.69 4.35 5.09z"/>
+      </svg>
+    </g>
+    <text x="42" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Azure</text>
+  </svg>

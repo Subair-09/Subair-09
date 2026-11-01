@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="40" viewBox="0 0 128 40" fill="none">
+    <rect x="0.5" y="0.5" width="127" height="39" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <g transform="translate(12, 8)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill="#326CE5" d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2zm0 2.3L5.34 8.15v7.7L12 19.7l6.66-3.85v-7.7L12 4.3zm0 3.2a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"/>
+      </svg>
+    </g>
+    <text x="42" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Kubernetes</text>
+  </svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0EDFE" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#EFF6FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#DBEAFE" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .foot-text { font-size: 13.5px; font-weight: 500; fill: #475569; }
+    .foot-highlight { font-weight: 600; fill: #1E293B; }
+  </style>
+
+  <!-- Divider lines with message -->
+  <line x1="140" y1="40" x2="260" y2="40" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="460" y="44" class="font-sans foot-text" text-anchor="middle">
+    Thanks for visiting!  <tspan fill="#F59E0B">⭐</tspan>  <tspan class="foot-highlight">Feel free to explore my projects and connect.</tspan>
+  </text>
+  <line x1="660" y1="40" x2="780" y2="40" stroke="#CBD5E1" stroke-width="1.2"/>
+
+  <!-- Subtle bottom decorative waves matching mockup -->
+  <path d="M0 80 C 250 50, 450 110, 920 70 L920 120 L0 120 Z" fill="url(#waveGrad)"/>
+  <path d="M0 95 C 300 75, 600 115, 920 85 L920 120 L0 120 Z" fill="#BFDBFE" opacity="0.4"/>
+</svg>
